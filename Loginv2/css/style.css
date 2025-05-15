@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #ddd;
+    /* display: flex; */
+    background-image: url(/img/anime_classroom.png);
+    background-size: cover;
+}
+.menu{
+    background-color: #00489A;
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+.menu div  {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    width: 110px;
+    
+}
+
+h1{
+    color: #fff;
+    margin-left: 450px;
+    text-transform: uppercase;
+}
+
+.container_form{
+    border: solid #00489A;
+    border-radius: 20px;
+    background-color: #fff;
+    width: 500px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ justify-content: center;
+ margin: 0 auto;
+ margin-top: 100px;
+ position: relative;
+}
+
+.container_form h2 {
+   display: block;
+   font-size: 40px;
+}
+
+input, label{
+    display: block;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+label{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+}
+input{
+    border-radius: 20px;
+    width: 250px;
+    font-size: 15px;
+}
+
+.btn{
+    height: 45px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: transparent;
+    border-radius: 30px;
+    border-color: #00489A;
+    color: #00489A;
+    transition: 1s;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #00489A;
+    color: #ddd;
+}
+
+.reckey {
+    text-decoration: none;
+    position: relative;
+    left: 150px;
+    margin-top: 10px;
+    color: #00489A;
+    transition: 1s;
+}
+
+.reckey:hover{
+    color: black;
+    text-decoration: underline;
+}

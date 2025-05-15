@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu carro</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="cabecalho">
+        <h2 class="cor">Casdatre seu veiculo para vender mais rapido!</h2>
+    </div>
+    <div class="cortainer_form">
+        <div class="selecform"><h1>formulario</h1></div>
+       <div class="descriçao">
+        <h3>Venda seu carro!</h3>
+        <p>Descreva as caracteristica e marque as opcionais abaixo</p>
+       </div>
+       <form action="">
+        <div class="input_box">
+            <label for="title">Titulo de anuncio: <span>*</span></label>
+            <input type="text" name="title" placeholder="Um Titulo para seu carro" required>
+        </div>
+        <div class="input_box">
+            <label for="preço">Preço: <span>*</span></label>
+            <input type="number" placeholder="Digite o Preço do carro" name="preço" required>
+        </div>
+        <div class="input_box">
+            <label for="descriçao">Discricão: <span>*</span></label>
+            <textarea name="descriçao" id="descriçao" required placeholder="Aqui você coloca os detalhe do veiculo, como se tem algum arranhão"></textarea>
+        </div>
+        <div class="input_box">
+            <label for="marca">Marca: <span>*</span></label>
+            <input type="text" name="marca" placeholder="Digite a marca do veiculo" required>
+        </div>
+        <div class="input_box">
+            <label for="modelo">Modelo: <span>*</span></label>
+            <input type="text" name="modelo" required placeholder="Digite o modelo do veiculo">
+        </div>
+        <div class="input_box">
+            <label for="km">Kilometragem: <span>*</span></label>
+            <input type="number" name="km" placeholder="Digite a kilometragem do veiculo" required>
+        </div>
+        <div class="input_box">
+            <label for="data">Data de compra: <span>*</span></label>
+            <input type="data" name="data" placeholder="AA/MM/AA" required>
+        </div class="input_box">
+        <p>Tipo de câmbio <span>*</span></p>
+        <div class="cambio">
+            <label for="manual" class="inline">Manual</label>
+            <input type="radio" class="inline">
+            <label for="automatico" class="inline">Automatico</label>
+            <input type="radio" name="automatico" class="inline">
+        </div>
+        <p>Opcionais <span>*</span></p>
+        <div class="input_box">
+            <ul>
+               <div class="container_list"> 
+                <div class="list">
+                    <li>
+                        <input type="checkbox" class="inline" name="airbarg">
+                        <label for="airbarg" class="inline">Airbarg</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="alame" class="inline">
+                        <label for="alame" class="inline">Alame</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="ac" class="inline">
+                        <label for="ac" class="inline">Ar Condicionado</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="Camara_re" class="inline">
+                        <label for="Camara_re" class="inline">Câmara de ré</label>
+                    </li>
+                </div>
+                <div class="list">
+                    <li>
+                        <input type="checkbox" name="assistente" class="inline">
+                        <label for="assistente" class="inline">Assistente de pista</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="keyless" class="inline">
+                        <label for="keyless" class="inline">Partida keyless</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="intre_smatph" class="inline">
+                        <label for="intre_smatph" class="inline">Intregração com Celular</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="banco_couro" class="inline">
+                        <label for="banco_couro" class="inline">Banco de couro</label>
+                    </li>
+                </div>
+               </div>
+            </ul>
+        </div>
+        <p>Fotos do carro: <span>*</span></p>
+        <div class="arquivo">
+            <input type="file" multiple accept="image.jpg/image.pgn" id="imagem" name="imagem" >
+        </div>
+        <div class="buttor">
+            <input type="submit" value="Enviar" class="btn">
+        </div>
+       </form>
+
+    </div>
+</body>
+</html>
