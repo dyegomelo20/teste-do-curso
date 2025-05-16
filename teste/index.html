@@ -1,18 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>teste</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exemplo Flexbox Responsivo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .col {
+      flex: 1;
+      min-width: 250px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .col:hover {
+      transform: scale(1.03);
+    }
+
+    .col:nth-child(1) {
+      background-color: #a8d0e6;
+    }
+
+    .col:nth-child(2) {
+      background-color: #f76c6c;
+    }
+
+    .col:nth-child(3) {
+      background-color: #ffcb77;
+    }
+
+    .col i {
+      font-size: 40px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .col h3 {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    .col p {
+      font-size: 16px;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="cortainer-menu">
-       <div class="menu">
-        <button>Home</button>
-        <button>login</button>
-        <button>registre</button>
-       </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Desenvolvimento</h3>
+        <p>Crie aplicações modernas com HTML, CSS e JavaScript.</p>
+      </div>
+      <div class="col">
+        <i class="fas fa-database"></i>
+        <h3>Banco de Dados</h3>
+        <p>Gerencie dados com segurança e performance.</p>
+      </div>
+      <div class="col">
+        <i class="fas fa-network-wired"></i>
+        <h3>Redes</h3>
+        <p>Aprenda sobre conexões, protocolos e infraestrutura.</p>
+      </div>
     </div>
+  </div>
 </body>
-</html>  
+</html>

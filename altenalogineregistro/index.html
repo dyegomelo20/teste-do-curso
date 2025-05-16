@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="javascrip.js"></script>
+</head>
+<body>
+<div class="container">
+  <!-- Formulário de Login -->
+  <form id="login-form" class="form active">
+    <h2>Login</h2>
+    <input type="email" placeholder="Email" required />
+    <input type="password" placeholder="Senha" required />
+    <button type="submit">Entrar</button>
+    <p>Não tem conta? <button type="button" onclick="mostrarRegistro()">Registrar</button></p>
+  </form>
+
+  <!-- Formulário de Registro -->
+  <form id="registro-form" class="form">
+    <h2>Registro</h2>
+    <input type="text" placeholder="Nome completo" required />
+    <input type="email" placeholder="Email" required />
+    <input type="password" placeholder="Senha" required />
+    <button type="submit">Registrar</button>
+    <p>Já tem conta? <button type="button" onclick="mostrarLogin()">Voltar ao Login</button></p>
+  </form>
+</div>
+
+</body>
+</html>
