@@ -73,3 +73,74 @@ li{
     font-size: 30px;
     
 }
+/* serviços */
+.container-services{
+    display: flex;
+    align-items: center;
+    padding: 4rem 2rem;
+    /* flex: 1; */
+}
+
+.servi{
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.servi i{
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.servi h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.servi p {
+    text-align: center;
+    padding: 5px;
+}
+
+.fa-shield-alt{
+    color: #2cc76a;
+}
+
+.fa-rocket{
+    color: #ff0000;
+}
+.fa-comments{
+    color: #d9ff00;
+}
+/* planos */
+.container-plan{
+    padding: 4rem 2rem;
+}
+.plan-text{
+    text-align: center;
+}
+.plan-text h2{
+    font-size: 35px;
+}
+.plan-text p{
+    font-size: 20px;
+}
+.planos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.planos ul{
+    padding: 2px;
+    justify-content: center;
+}
+.planos li{
+    padding: 10px;
+    background-color: #aaa;
+}
+.plan-preços{
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    line-height: 90px;
+}
