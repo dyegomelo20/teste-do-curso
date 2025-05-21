@@ -127,20 +127,155 @@ li{
 .planos{
     display: flex;
     flex-wrap: wrap;
+    padding: 4rem 0;
+    gap: 30px;
 }
 
 .planos ul{
-    padding: 2px;
-    justify-content: center;
+    flex: 1 1 1;
 }
 .planos li{
-    padding: 10px;
+    height: 80px;
+    width: 320px;
     background-color: #aaa;
-}
-.plan-preços{
-    border-radius: 100%;
-    height: 100px;
-    width: 100px;
     text-align: center;
-    line-height: 90px;
+    line-height: 80px;
+    font-size: 20px;
+}
+
+.planos .plan-preços{
+    border-radius: 100%;
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    line-height: 120px;
+    background-color: #2cc76a;
+    margin: 0 auto -50px;
+    position: relative;
+}
+
+.planos .btn-plan{
+    background-color: #2cc76a;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+.planos .recomedado{
+    background-color: #ff2a00;
+}
+
+.planos .plan{
+   padding: 40px 0 80px;
+    background-color: #232a31;
+    font-size: 30px;
+    color: #fff;
+    
+}
+
+.container-pesquisa {
+    padding: 6rem 0;
+    background-color: #232a31;
+}
+.pesquisa{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.pesquisa h2{
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.pesquisa p{
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.pesquisa input[type="text"]{
+    padding: 15px;
+    width: 700px;
+    border-radius: 10px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.pesquisa input[type="submit"]{
+    /* display: block; */
+    padding: 20px 60px;
+    font-size: 25px;
+    /* margin: 0 auto; */
+    background-color: #2cc76a;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    opacity: 0.8;
+    transition: 1s;
+}
+.pesquisa input[type="submit"]:hover{
+    opacity: 1;
+}
+.container-pergunta{
+    padding: 4rem 2rem;
+}
+.mensagem {
+    text-align: center;
+}
+.mensagem h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.mensagem p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.container-pergunta{
+padding: 2rem 0 0;
+}
+.input-mensagem {
+ padding: 2rem 0;  
+ width: 100%;
+ display: flex;
+ flex-direction: column; 
+ align-items: center;
+}
+.input-box{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.input-mensagem .input-box input{
+    padding: 10px;
+    height: 60px;
+    width: 300px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.input-mensagem textarea{
+    height: 300px;
+    width: 500px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.input-mensagem  input{
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #2cc76a;
+    color: #fff;
+    font-size: 20px;
+    opacity: 0.8;
+    transition: 1s;
+}
+
+.input-mensagem input:hover{
+    opacity: 1;
+}
+footer{
+    text-align: center;
+    font-size: 15px;
+    padding: 0 2rem 2rem;
 }
