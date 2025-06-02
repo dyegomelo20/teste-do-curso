@@ -169,7 +169,7 @@ nav{
     color: #fff;
     cursor: pointer;
 }
-.planos .recomedado{
+.planos .recomendado{
     background-color: #ff2a00;
 }
 
@@ -290,13 +290,13 @@ footer{
     margin: 50px 0 100px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 790px){
 .container-banner p{
     padding: 0 4rem;
 }
 .planos{
     flex-direction: column;
-    padding: 0 3rem;
+    padding: 0 10rem;
 }
 }
 
@@ -311,7 +311,7 @@ footer{
         padding: 0 2rem;
     }
     .nav-items li{
-        margin-left: 5px;
+        margin-left: 3px;
     }
     .planos {
         padding: 0;
@@ -319,5 +319,56 @@ footer{
     .pesquisa h2{
         padding: 0 1rem;
         font-size: 36px;
+    }
+    .pesquisa input[type="text"]{
+        font-size: 20px;
+        width: 80%;
+    }
+    .input-mensagem textarea{
+        width: 95%;
+    }
+    .input-box{
+        flex-direction: column;
+        width: 95%;
+    }
+    .input-mensagem .input-box input{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .container-banner p{
+        padding: 0 1rem;
+    }
+    .container-nav img {
+        width: 30px;
+        margin-top: 25px;
+    }
+    .nav-items li{
+        font-size: 10px;
+    }
+    .plan-text{
+        margin-bottom: 20px;
+    }
+    .pesquisa h2{
+        font-size: 30px;
+        padding: 0 1rem;
+    }
+    .pesquisa p {
+        font-size: 20px;
+        padding: 0 2rem;
+    }
+    .pesquisa input[type="text"]{
+        font-size: 15px;
+        width: 80%;
+    }
+    .pesquisa input[type="submit"]{
+        padding: 10px 20px;
+    }
+    .mensagem h2{
+        font-size: 30px;
+    }
+    .mensagem p{
+        padding: 0 2rem;
     }
 }
